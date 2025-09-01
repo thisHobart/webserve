@@ -1,0 +1,65 @@
+# JetBrains IDEs（包括CLion）
+# 忽略项目本地配置和缓存文件
+.idea/
+*.iml
+cmake-build-*/
+*.out
+!/cmake-build-debug/
+!/cmake-build-release/
+
+# 编译和临时文件（C++）
+# 忽略所有可执行文件、目标文件、静态/动态库
+*.o
+*.obj
+*.so
+*.dll
+*.lib
+*.a
+*.exe
+*.log
+*.tmp
+/bin/
+/build/
+
+# Python相关文件
+# 忽略Python虚拟环境、pyc文件、缓存等
+__pycache__/
+.venv/
+venv/
+env/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+
+# 深度学习项目专用文件
+# 强烈建议忽略数据文件和模型权重，因为它们通常非常大
+# 注意：若您的数据文件在不同目录，请自行修改路径
+# 例如：如果你有/raw_data目录，请添加 /raw_data/
+/data/
+/datasets/
+/processed_data/
+/results/
+/outputs/
+/logs/
+
+# 忽略常见模型文件格式
+*.onnx
+*.pth
+*.pt
+*.h5
+*.hd5
+*.pkl
+*.pb
+*.tflite
+
+# 忽略日志文件和临时文件
+*.log
+*.temp
+/tmp/
+
+# 其他系统和IDE相关文件
+.DS_Store
+Thumbs.db
